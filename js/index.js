@@ -37,11 +37,11 @@ for(i=0;i<boxes.length;i++){
         if(!event.target.classList.contains("markedX") && !event.target.classList.contains("markedO") && !event.target.classList.contains("markedEnd")){
             if(state === 1){
                 event.target.classList.toggle("markedX");
-                event.target.children[0].setAttribute("src", "./assets/Line 3.png")
+                event.target.children[0].setAttribute("src", "./assets/x.svg")
                 state=2;
             } else if(state === 2){
                 event.target.classList.toggle("markedO");
-                event.target.children[0].setAttribute("src", "./assets/Line 4.png")
+                event.target.children[0].setAttribute("src", "./assets/Ellipse 1.svg")
                 state=1;
             }
             winDrawHandler();
