@@ -41,7 +41,7 @@ for(i=0;i<boxes.length;i++){
                 state=2;
             } else if(state === 2){
                 event.target.classList.toggle("markedO");
-                event.target.children[0].setAttribute("src", "./assets/Ellipse 1.svg")
+                event.target.children[0].setAttribute("src", "./assets/o.svg")
                 state=1;
             }
             winDrawHandler();
