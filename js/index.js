@@ -349,9 +349,19 @@ function restart(){
         if(boxes[k].classList.contains("markedX")){
             boxes[k].classList.toggle("markedX")
             boxes[k].children[0].setAttribute("src", "")
+            if(boxes[k].children[0].classList.contains("markedX")){
+                boxes[k].children[0].classList.toggle("markedX")
+            } else if(boxes[k].children[0].classList.contains("markedO")){
+                boxes[k].children[0].classList.toggle("markedO")
+            }
         } else if(boxes[k].classList.contains("markedO")){
             boxes[k].classList.toggle("markedO")
             boxes[k].children[0].setAttribute("src", "")
+            if(boxes[k].children[0].classList.contains("markedX")){
+                boxes[k].children[0].classList.toggle("markedX")
+            } else if(boxes[k].children[0].classList.contains("markedO")){
+                boxes[k].children[0].classList.toggle("markedO")
+            }
         }
     }
 };
